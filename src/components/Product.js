@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 class Product extends Component {
     render() {
         return (
-            <div>
+            <div className="product">
                 <p>Name: {this.props.name}</p>
                 {this.props.producer ? <small>{this.props.producer}</small> : null}
                 <p>{this.props.hasWatermark ? 'Watermarked' : 'Not watermarked'}</p>
